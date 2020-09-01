@@ -61,12 +61,19 @@ function generatePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", erasePassword);
 
-//copy to clipboard
+//copy to clipboard and clear
 function copyPassword() {
   var copyText = document.getElementById("password");
   copyText.select();
   document.execCommand("Copy");
   alert("Copied to Clipboard");
   document.getElementById("password").value = "";
+  //document.getElementById("writePassword").value = "";
 }
+
+/*
+function erasePassword() {
+  document.getElementById('password').value = "";
+} */
