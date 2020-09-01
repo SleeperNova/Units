@@ -61,5 +61,14 @@ function generatePassword() {
       // console.log(randomPick);
     }; 
   };
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+//copy to clipboard
+function copyPassword() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("Copy");
+  alert("Copied to Clipboard");
+}
