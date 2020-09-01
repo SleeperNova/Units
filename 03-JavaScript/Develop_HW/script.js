@@ -9,7 +9,6 @@ function writePassword() {
   generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
 };
 
 //Main javascript to create password possibly composed of upper, lower, numeric, and special characters
@@ -19,8 +18,6 @@ function generatePassword() {
     const lower = "abcdefghijklmnopqrstuvwxyz";
     const numbers = "0123456789";
     const special = "#$%;&'()*+,-./:;<=>?@[\]^_`{|}~";
-
-    // var password = (' ');
 
     //Keep prompting user if length is not between 8 and 128
     do {
@@ -34,7 +31,7 @@ function generatePassword() {
       var cnfrmnumbers = confirm("Would you like numbers in password?");
       var cnfrmspecial = confirm("Would you like special characters in password?");
       var pwdChars = [];
-    } while ((cnfrmupper === false) && (cnfrmlower === false) && (cnfrmlower === false) && (cnfrmspecial === false));
+    } while ((cnfrmupper === false) && (cnfrmlower === false) && (cnfrmnumbers === false) && (cnfrmspecial === false));
 
     //Append array given user choices from confirms above
     if(cnfrmupper) {
@@ -71,4 +68,5 @@ function copyPassword() {
   copyText.select();
   document.execCommand("Copy");
   alert("Copied to Clipboard");
+  document.getElementById("password").value = "";
 }
