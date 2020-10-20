@@ -1,59 +1,15 @@
-# Project 1
+# Eat Local
+![Screenshot of Eat Local](assets/images/Homepage.png)
 
-## Application Requirements
+An app that shows restaurants near you! Search by keyword of what you're craving or click on a category provided if it catches your eye. *Eat Local* focuses on restaurants within 10km of you so you can get to the food you want, faster.
 
-* Must use at least two server-side APIs
+## Functionalities
+1. The app will ask permission before getting your location
+2. You can look for restaurants using the search bar or clicking on a category
+3. View relevant data about the restaurants you searched for: rating, phone number, directions etc.
 
-* Must use a CSS framework _other than_ Bootstrap
-
-* Must be interactive (i.e: accept and respond to user input)
-
-* Use at least one new third-party API
-
-* Must have a polished UI
-
-* Must meet good quality coding standards
-
-* Does not use alerts, confirms or prompts (look into _modals_)
-
-* Must be deployed to GitHub Pages
-
-
-## Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show your stuff!
-
-* Directions for Future Development
-
-* Links to the deployed application and the GitHub repository
-
-
-## Grading Metrics 
-
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository
-
-
-
+## Built with:
+- [Zomato API](https://developers.zomato.com/api)
+- [Yelp API](https://www.yelp.com/developers/documentation/v3/business_search)
+- [Maps URLS](https://developers.google.com/maps/documentation/urls/get-started)
+- [Bulma](https://bulma.io/documentation/)
